@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         const password = document.getElementById('adminPassword').value;
         
-        // Simple password check (you can make this more secure)
         if (password === '898nfRS5DJ+cvaSyOjTL2w==') {
           const newDate = new Date().toISOString().split('T')[0]; // Format: YYYY-MM-DD
           
