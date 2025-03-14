@@ -21,7 +21,36 @@ window.addEventListener('load', () => {
             console.error('שגיאה בעת השגת גרסה', error);
             versionSpan.textContent = "שגיאה בעת השגת גרסה";
         });
+        
+    // Check for stored integrity date
+    updateIntegrityStatus();
 });
+
+function updateIntegrityStatus() {
+    const storedDate = localStorage.getItem('gameIntegrityDate');
+    const storedStatus = localStorage.getItem('gameIntegrityStatus');
+    
+    if (storedDate) {
+        // Find the element that displays the date and update it
+        const dateElement = document.querySelector('.uptext p');
+        if (dateElement) {
+            const updatedText = dateElement.innerHTML.replace(
+                /לאחר בדיקה ידנית שנערכה בתאריך ה([0-9-]+)/,
+                `לאחר בדיקה ידנית שנערכה בתאריך ה${storedDate}`
+            );
+            dateElement.innerHTML = updatedText;
+        }
+        
+        // Update the status (שחיק or אינו שחיק)
+        if (storedStatus) {
+            const statusElement = document.querySelector('.uptext .colortext');
+            if (statusElement) {
+                statusElement.textContent = storedStatus;
+                statusElement.style.color = storedStatus === 'שחיק' ? 'green' : 'red';
+            }
+        }
+    }
+}
 
 function FSfunction() {
     document.querySelector("ruffle-embed, ruffle-object, ruffle-player").enterFullscreen();
@@ -39,4 +68,4 @@ document.addEventListener('DOMContentLoaded', function() {
         splashScreen.remove();
       }, 500); // This should match the transition duration in the CSS
     });
-  });
+});
