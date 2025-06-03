@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-image: url("bg.png");
+    background-size: no-repeat;
+    background-repeat: repeat-x;
+    background-color: #0b4351;
+    margin: 0;
+    padding: 20px;
+    min-width: 770px;
+    margin-top: 4%;
+}

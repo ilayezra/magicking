@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    background-image: url("bg.png");
+    background-size: no-repeat;
+    background-repeat: repeat-x;
+    background-color: #0b4351;
+    margin: 0;
+    padding: 20px;
+    min-width: 770px;
+    margin-top: 4%;
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.bubble {
+    margin: auto;
+    width: 50%;
+    background: rgba(11, 67, 81, 0.7);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.credits-container {
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 18px 40px 18px;
+    text-align: center;
+    direction: rtl;
+  }
+  
+  .credits-container h1 {
+    color: #ffffff;
+    margin-bottom: 18px;
+  }
+  
+  .credits-container h2 {
+    margin: 32px 0 18px 0;
+    font-size: 1.2em;
+  }
+  
+  .team-grid {
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  
+  .original-team {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .new-team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-grid a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.15s;
+  }
+  
+  .team-grid a:hover {
+    transform: scale(1.06);
+  }
+  
+  .team-grid img {
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.08);
+    margin-bottom: 8px;
+    transition: border-color 0.2s;
+  }
+  
+  .team-grid a:hover img {
+    border-color: #1976d2;
+  }
+  
+  .team-gap {
+    height: 40px;
+  }
+
+  .original-team img {
+    width: 90%;
+    height: auto;
+  }
+  
+  .new-team img {
+    width: 80%;
+    max-width: 190px;
+    height: auto;
+  }
+  
+  /* רספונסיביות */
+  @media (max-width: 900px) {
+    .original-team {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .new-team {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .credits-container {
+      padding: 16px 4px 24px 4px;
+    }
+    .original-team {
+      grid-template-columns: 1fr;
+    }
+    .team-grid img {
+      width: 70px;
+      height: 70px;
+    }
+  }

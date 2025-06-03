@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+
+body {
+    background-image: url("bg.png");
+    background-size: no-repeat;
+    background-repeat: repeat-x;
+    background-color: #0b4351;
+    text-align: right;
+    direction: rtl;
+    font-family: 'Assistant', 'Rubik', Arial, sans-serif;
+    margin-top: 3%;
+}
+
+.text {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background: rgba(11, 67, 81, 0.7);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 18px 16px;
+    border-right: 6px solid #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: right;
+    color: aliceblue;
+}
+
+p {
+    text-align: right;
+    color: aliceblue;
+}
+
+.text h2 {
+    color: #ffffff;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 1.15em;
+    text-align: right;
+  }
+  
+  .text p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+  }
+
+  .back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0;
+    text-decoration: none;
+  }
+  
+  .back-btn img {
+    max-width: 22vw;
+    max-height: 22vw;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .back-btn:hover img {
+    content: url('back_hover.png');
+  }

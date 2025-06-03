@@ -9,6 +9,8 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1633801829384979"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="fp_banner_hover.png">
+    <link rel="preload" as="image" href="button_hover.png">
     <script type="text/javascript" src="script.js"></script>
 
     <meta name="description"
@@ -33,29 +35,9 @@
 </head>
 
 <body>
-    <div id="splashScreen" class="splash-screen">
-        <div class="splash-content">
-          <h1>ברוכים השבים לבמבה בממלכה הקסומה</h1>
-          <p>במבה בממלכה הקסומה הוא משחק אשר הופץ על ידי אסם ב2009 ומאז גרר פופולריות רבה, אתר זה נועד לשמר את המשחק מבלי לפגוע ביוצריו
-            <br> האתר נמצא בשלבי בנייה והרבה מתכניו אינם מוכנים עוד כעת אך הם יהיו זמינים בקרוב מאוד, עמכם הסליחה
-            <br> לחיצה על כפתור זה מהווה את הסכמתכם לשימוש באתר
-          </p>
-          <button id="closeSplash">התחילו לשחק!</button>
-        </div>
-      </div>
-    <a href="/admin.html" target="_blank"><img src="/beta.png" alt="אזהרה! גרסת בטא!" class="betasign"></a>
-    <div class="uptext">
-        <p>סטטוס תקינות המשחק:
-            <br>
-            המשחק פועל בעזרת האמולטור <a href="https://ruffle.rs/" target="_blank">Ruffle</a> ומשתמש בגרסת <span
-                id="ruffleVersion"></span>
-            <br>
-            לאחר בדיקה ידנית שנערכה בתאריך ה2025-03-04 ניכר כי המשחק <span class="colortext">אינו שחיק</span>
-        </p>
-    </div>
     <div class="flex-container">
         <div class="game">
-            <embed src="content/www.magic-kingdom.live/static/game/BambaMain.swf" width="736" height="520"></embed>
+            <embed src="static/game/BambaMain.swf" width="736" height="520"></embed>
             <img class="fullscreenButton" onclick="FSfunction()" src="/FSbutton.png" alt="מסך מלא" draggable="false">
         </div>
         <div class="bottom-section">
@@ -84,6 +66,15 @@
             אדם מצידם) אתר זה פועל במטרה לשמר את המשחק ולתת אופציה לאנשים לחוות אותו שוב.
             <br>אם אתם מחזיקי הזכויות לתכני משחק זה אנא פנו אליי במייל הזה ואסיר אותו במיידית - <a
                 href="mailto:contact@bamba.quest">contact@bamba.quest</a>
+                <br>
+                <br>
+                <nav class="main-nav">
+                    <a href="/terms">תנאי שימוש</a>
+                    <span class="divider">│</span>
+                    <a href="/credits">קרדיטים</a>
+                    <span class="divider">│</span>
+                    <a href="/help">עזרו לנו</a>
+                  </nav>
         </p>
     </footer>
 </body>

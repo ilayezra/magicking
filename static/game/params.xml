@@ -5,15 +5,15 @@
 	<forgetPassSource>/forget_new</forgetPassSource>
 	<sendPassSource>http://127.0.0.1/MagicKingdom/sendPassword.asp</sendPassSource>-->
 
-	<playerDataSource>http://bambamk.s3.amazonaws.com/static/game/xmls/playerData.xml</playerDataSource> 
-	<newPlayerDataSource>xmls/newPlayerAnswer.xml</newPlayerDataSource> 
-	<updatePlayerDataSource>http://bambamk.s3.amazonaws.com/static/game/updates.php</updatePlayerDataSource>
+	<playerDataSource>/static/xml/playerData.xml</playerDataSource> 
+	<newPlayerDataSource>/static/xml/xmls/newPlayerAnswer.xml</newPlayerDataSource> 
+	<updatePlayerDataSource>static/notused</updatePlayerDataSource>
 	<forgetPassSource>local</forgetPassSource>	
-	<sendPassSource>http://127.0.0.1/MagicKingdom/sendPassword.asp</sendPassSource>  
+	<sendPassSource>static/notused</sendPassSource>  
 	
-	<xmlPath>http://bambamk.s3.amazonaws.com/static/game/xmls</xmlPath>
-	<assetsPath>/static/game/assets</assetsPath>
-	<soundsPath>http://bambamk.s3.amazonaws.com/static/game/sounds</soundsPath>
+	<xmlPath>/static/xml</xmlPath>
+	<assetsPath>/static/assets</assetsPath>
+	<soundsPath>/static/sounds</soundsPath>
 	
 	<dictionaryFileName>dictionary.xml</dictionaryFileName>
 	<generalDataFileName>generalData.xml</generalDataFileName>
