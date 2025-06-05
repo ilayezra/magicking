@@ -207,3 +207,25 @@ body {
 #disqus_thread {
     margin-top: 100px;
 }
+
+.images-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px 0;
+  }
+  
+  .images-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: #f8f8f8;
+    object-fit: cover;
+    transition: transform 0.15s;
+  }
+  
+  .images-grid img:hover {
+    transform: scale(1.04);
+  }
