@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>במבה בחזרה הקסומה</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2">
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1633801829384979"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://counterapi.com/c.js" async></script>
+    <meta name="description"
+    content="אתר לא רשמי, במשחק במבה בממלכה הקסומה אתם מגלמים את התינוק המפורסם של במבה, הפעם בתפקיד של קוסם צעיר שצריך להפטר מכל המפלצות שחדרו לממלכה.">
+</head>
+<body>
+  <div class="article-container">
+    <div class="article-header">
+      <div class="author-info">
+        <img src="my-photo.jpg" alt="הכותב" class="author-img">
+        <span class="author-name">מאת: השם שלך</span>
+      </div>
+      <h1 class="article-title">כותרת המאמר כאן</h1>
+    </div>
+    <div class="article-meta">
+      <div class="meta-item">
+        <span class="meta-icon">👁️</span>
+        <span class="counterapi" id="viewCounter"></span>
+        <span class="meta-label">צפיות</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-icon" style="color:#e53935;">❤</span>
+        <span class="counterapi" id="likeButton"></span>
+        <span class="meta-label">אהבתי</span>
+      </div>
+    </div>
+    <div class="article-content">
+      <p>
+        זהו טקסט דוגמה. כאן תוכל להכניס פסקאות, תמונות, קישורים, רשימות וכל מה שתרצה.
+      </p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var key = location.pathname.replace(/\W/g, "_");
+      document.getElementById("viewCounter").setAttribute("key", key);
+      document.getElementById("likeButton").setAttribute("key", key + "_like");
+      document.getElementById("likeButton").setAttribute("behavior", "vote");
+    });
+  </script>
+</body>
+</html>
