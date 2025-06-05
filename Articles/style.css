@@ -127,3 +127,29 @@ body {
   from { opacity: 0; transform: translateY(30px);}
   to { opacity: 1; transform: translateY(0);}
 }
+
+.back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+  text-decoration: none;
+}
+
+.back-btn img {
+  max-width: 22vw;
+  max-height: 22vw;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.back-btn:hover img {
+  content: url('back_hover.png');
+}
+
+@media (max-width: 600px) {
+  .back-btn img {
+    max-width: 18vw;
+    max-height: 18vw;
+  }
+}
